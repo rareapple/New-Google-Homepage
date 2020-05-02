@@ -157,8 +157,11 @@ button {
 
 footer {
   display: grid;
-  grid-template-columns: repeat(2, 100px) 150px 1fr repeat(3, 100px);
-  grid-template-areas:'advertising business how-search-works . privacy terms settings';
+  grid-template-columns: 70px 100px 150px 1fr repeat(3, 60px);
+  /* grid-template-rows: 35px; */
+  grid-template-areas:
+  'country . . . . . .'
+  'advertising business how-search-works . privacy terms settings';
   position: absolute;
   bottom: 0;
   padding: 1em;
@@ -166,6 +169,7 @@ footer {
   opacity: 0.6;
   background-color: rgba(242, 242, 242,0.9);
   border-top: 1px solid rgba(200, 200, 200,0.5);
+
 
 }
 
@@ -175,7 +179,7 @@ footer a:hover {
 
 .advertising {
   grid-area:advertising;
-  justify-self: center;
+  justify-self: start;
   align-items: center;
 
 }
@@ -194,7 +198,7 @@ footer a:hover {
 
 .privacy {
   grid-area:privacy;
-  justify-self: center;
+  justify-self: end;
   align-items: center;
 }
 
@@ -206,6 +210,24 @@ footer a:hover {
 
 .settings {
   grid-area:settings;
-  justify-self: center;
+  justify-self: start;
   align-items: center;
+}
+
+
+
+/* test grid */
+
+
+p.country {
+  position: absolute;
+  bottom: 48px;
+  padding: 1.2em;
+  width: 100%;
+  margin: 0;
+  background-color: rgba(242, 242, 242,0.9);
+  opacity: 0.6;
+  border-top: 1px solid rgba(200, 200, 200,0.5);
+  font-family: arial, sans-serif;
+  font-size: 13px;
 }
