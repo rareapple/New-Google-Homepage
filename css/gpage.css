@@ -121,8 +121,9 @@ font-size: 13px;
   align-self: start;
 }
 
-button {
-  opacity: 0.8;
+a.gsearch,
+a.flucky {
+  opacity: 0.6;
   padding: 1em;
   border-radius: 5px;
   background: rgba(242, 242, 242,0.9);
